@@ -13,3 +13,11 @@ guest:guest@localhost:5672 adalah URL yang digunakan untuk melakukan akses messa
 ![Chart data](/assets/images/photo1.jpg)
 
 Subsrciber dibuat lebih lambat 1 detik dan dapat dilihat dari chart. Terdapat banyak queued message karena menunggu pesan sebelumnya diproses subscriber. Dalam chart terdapat 40+ message lebih dalam queue setelah 10 kali menjalankan publisher.
+
+## Reflection and Running at least three subscribers
+
+![Chart data](/assets/images/photo2.jpg)
+
+![Chart data](/assets/images/photo3.jpg)
+
+Setelah menjalankan 3 subscriber, banyaknya message dalam antrian turun menjadi 20+ saja setelah 10 kali menjalankan publisher. Dengan memperbanyak subscriber yang memproses queue yang sama. Dapat dilihat subscriber-subscriber ini menjadi lebih cepat memproses message secara keseluruhan. Ini menjelaskan penurunan message pada queue.
